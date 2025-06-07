@@ -1,0 +1,63 @@
+/* Sidebar.css */
+
+.sidebar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #2c3e50; /* fondo oscuro */
+  color: white;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+/* Cuando el sidebar está visible */
+.sidebar-wrapper.visible {
+  transform: translateX(0);
+}
+
+/* Cuando el sidebar está oculto */
+.sidebar-wrapper.hidden {
+  transform: translateX(-100%);
+}
+
+/* Contenido interno, ejemplo */
+.sidebar-header {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #34495e;
+}
+
+.sidebar-menu {
+  padding: 1rem;
+}
+
+.sidebar-menu .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu .sidebar-item {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-menu .sidebar-link {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.sidebar-menu .sidebar-link:hover {
+  background-color: #34495e;
+}
+
+/* Iconos y textos dentro del sidebar */
+.sidebar-menu i {
+  margin-right: 0.5rem;
+}
