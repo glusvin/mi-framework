@@ -30,7 +30,9 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
               </Link>
             </li>
 
-            <li className={`sidebar-item has-sub ${openConfig ? "active" : ""}`}>
+            <li
+              className={`sidebar-item has-sub ${openConfig ? "active" : ""}`}
+            >
               <a
                 href="#"
                 className="sidebar-link"
@@ -51,6 +53,9 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                 </li>
                 <li className="submenu-item">
                   <Link to="/usuarios">Usuarios</Link>
+                </li>
+                <li className="submenu-item">
+                  <Link to="/empresas">Empresas</Link>
                 </li>
               </ul>
             </li>
