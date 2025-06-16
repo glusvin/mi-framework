@@ -1,15 +1,14 @@
-// src/layouts/Topbar.jsx
 import React from "react";
+import userAvatar from "../assets/mazer/images/faces/1.jpg";
 
 const Topbar = ({ toggleSidebar }) => {
   return (
     <header className="mb-3">
-      <nav className="navbar navbar-expand navbar-light ">
+      <nav className="navbar navbar-expand navbar-light">
         <div className="container-fluid">
-          <a href="#" className="burger-btn d-block">
+          <a href="#" className="burger-btn d-block" onClick={toggleSidebar}>
             <i className="bi bi-justify fs-3"></i>
           </a>
-
           <button
             className="navbar-toggler"
             type="button"
@@ -77,7 +76,7 @@ const Topbar = ({ toggleSidebar }) => {
                   </div>
                   <div className="user-img d-flex align-items-center">
                     <div className="avatar avatar-md">
-                      <img src="../assets/mazer/images/faces/1.jpg" />
+                      <img src={userAvatar} alt="User Avatar" />
                     </div>
                   </div>
                 </div>
@@ -96,14 +95,12 @@ const Topbar = ({ toggleSidebar }) => {
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    <i className="icon-mid bi bi-gear me-2"></i>
-                    Settings
+                    <i className="icon-mid bi bi-gear me-2"></i> Settings
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    <i className="icon-mid bi bi-wallet me-2"></i>
-                    Wallet
+                    <i className="icon-mid bi bi-wallet me-2"></i> Wallet
                   </a>
                 </li>
                 <li>
