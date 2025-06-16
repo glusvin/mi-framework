@@ -7,10 +7,10 @@ const Dashboard = () => {
       <div className="col-6 col-lg-3 col-md-6">
         <div className="card">
           <div className="card-body px-3 py-4-5">
-            <div className="row">
+            <div className="row align-items-center">
               <div className="col-md-4">
-                <div className="stats-icon purple">
-                  <i className="bi bi-people"></i>
+                <div className="stats-icon purple d-flex justify-content-center align-items-center">
+                  <i className="bi bi-people fs-2"></i>
                 </div>
               </div>
               <div className="col-md-8">
@@ -26,10 +26,10 @@ const Dashboard = () => {
       <div className="col-6 col-lg-3 col-md-6">
         <div className="card">
           <div className="card-body px-3 py-4-5">
-            <div className="row">
+            <div className="row align-items-center">
               <div className="col-md-4">
-                <div className="stats-icon blue">
-                  <i className="bi bi-bar-chart-line"></i>
+                <div className="stats-icon blue d-flex justify-content-center align-items-center">
+                  <i className="bi bi-bar-chart-line fs-2"></i>
                 </div>
               </div>
               <div className="col-md-8">
@@ -41,7 +41,7 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* Agrega más cards según necesites */}
+      {/* Puedes agregar más cards siguiendo este formato */}
     </div>
   );
 };
